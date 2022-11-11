@@ -1,6 +1,9 @@
+#!/usr/bin/env node
+
 const links = require('./index');
 const getLinks = require('./lib/parser');
 const { getValidateStats, getStats } = require('./lib/stats');
+
 const [, , ...[path, validate, stats]] = process.argv;
 
 if (!path) {
